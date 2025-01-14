@@ -8,9 +8,9 @@ import {
   Put,
 } from '@nestjs/common';
 import { CategoriesService } from './categories.service';
-import { ICategory } from './interface/categories.interface';
+import { ICategory } from './interface/category.interface';
 import { IErrorResponse } from 'src/global.interface';
-import { CreateCategoryDto } from './dto/create-categories.dto';
+import { CreateCategoryDto } from './dto/create-category.dto';
 
 @Controller('categories')
 export class CategoriesController {
