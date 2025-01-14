@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: advisorUser
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: advisorDB
+    ports:
+      - 5433:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
